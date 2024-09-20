@@ -1,5 +1,7 @@
 FROM node
-COPY . /app 
+COPY public /app 
+COPY package.json /app
+COPY server.js /app
 WORKDIR /app
 RUN npm install
 EXPOSE 80
