@@ -1,0 +1,4 @@
+FROM python
+WORKDIR /functions
+COPY . /functions
+CMD [ "python3","custom.py"]
